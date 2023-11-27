@@ -1,0 +1,57 @@
+{
+  "name": "playwright-typescript-playwright-test",
+  "version": "1.0.0",
+  "description": "Playwright Framework with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:single": "npx playwright test Login.test.ts --project=Chrome",
+    "test:parallel": "npx playwright test --grep '@API|@Smoke' --project=Chrome",
+    "test:parallel:api": "npx playwright test --grep @API --project=Chrome",
+    "test:serial": "npx playwright test --grep @Smoke --workers=1 --project=Chrome",
+    "test:ui": "npx playwright test --grep @Smoke --ui",
+    "test:record": "npx playwright codegen",
+    "test:visual": "npx playwright test visualComparision.test.ts --project=Chrome",
+    "test:device": "npx playwright test Emulation.test.ts --project=Device",
+    "allureReport": "npx allure generate ./allure-results --clean --single-file",
+    "upload:tr:results": "dotenv -- cross-var trcli -n -h %TR_HOST% -u %TR_USERNAME% -p %TR_API_KEY% --project %TR_PROJECT_NAME% parse_junit --title %TR_TITLE% --case-matcher name --allow-ms --run-description yes -f './test-results/junit-report.xml'"
+  },
+  "author": "Vipul Goyal",
+  "license": "Lululemon B2B Test Framework",
+  "dependencies": {
+    "@types/adm-zip": "^0.5.0",
+    "@types/crypto-js": "^4.1.1",
+    "@types/node-fetch": "^2.6.7",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "adm-zip": "^0.5.10",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.44.0",
+    "eslint-plugin-import": "^2.27.5",
+    "exceljs": "^4.3.0",
+    "jest-playwright-preset": "^3.0.1",
+    "lighthouse": "^9.6.8",
+    "npm": "^9.6.4",
+    "pdfjs-dist-es5": "^2.13.216",
+    "pg": "^8.11.1",
+    "playwright-chromium": "^1.38.0",
+    "typescript": "^5.1.6",
+    "winston": "^3.9.0"
+  },
+  "jest": {
+    "preset": "jest-playwright-preset"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@playwright/test": "^1.39.0",
+    "allure-commandline": "^2.24.1",
+    "allure-playwright": "^2.9.2",
+    "base-64": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
+    "csv-parse": "^5.5.2",
+    "node-fetch": "^2.7.0"
+  }
+}

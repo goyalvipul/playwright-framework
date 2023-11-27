@@ -1,0 +1,12 @@
+#folders
+node_modules
+allure-results
+html-report
+test-results
+allure-report
+
+
+#files
+.DS_Store
+.env
+info.log

@@ -1,0 +1,11 @@
+{
+  "url": "{host}/{projectKey}/customers",
+  "method": "POST",
+  "headers": {},
+  "body": {
+    "email": "juanss.joe@yopmail.com",
+    "firstName": "Juan",
+    "lastName": "Joe",
+    "password": "secret123"
+  }
+}

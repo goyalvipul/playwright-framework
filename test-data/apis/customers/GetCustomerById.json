@@ -1,0 +1,6 @@
+{
+  "url": "{host}/{projectKey}/customers/{customer-id}",
+  "method": "GET",
+  "headers": {},
+  "body": null
+}

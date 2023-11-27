@@ -1,0 +1,6 @@
+{
+  "url": "{auth_url}/oauth/token?grant_type=client_credentials",
+  "method": "POST",
+  "headers": "",
+  "body": ""
+}

@@ -1,0 +1,12 @@
+tr_id,scenario,username,password,error,email_field_error,password_field_error,generic_error
+C5144392,Generic error is shown when Admin uses incorrect password,admintest@yopmail.com,Incorrect@12,y,NA,NA,Something’s not right with your email address or password
+C5144393,Generic error is shown when Buyer uses incorrect password,buyertest@test.com,Incorrect@12,y,NA,NA,Something’s not right with your email address or password
+C5144394,Generic error is shown when Finance uses incorrect password,financetest@test.com,Incorrect@12,y,NA,NA,Something’s not right with your email address or password
+C5144396,Error shown when Email field is left empty,,Password@12,y,Email required,NA,NA
+C5144397,Error shown when Password field is left empty,admintest@test.com,,y,NA,Password required,NA
+C5144398,Error shown if Email and Password fields are left empty,,,y,Email required,Password required,NA
+C5144399,Error shown when no domain is used in Email field,nodomain,Password@12,y,Email address is not in the correct format (xxx@yyy.zzz). Please correct the email address.,NA,NA
+C5144400,Error shown when no endpoint is used in the Email field,@domain.com,Password@12,y,Email address is not in the correct format (xxx@yyy.zzz). Please correct the email address.,NA,NA
+C5144389,Admin is able to login using valid credentials,admintest@yopmail.com,Password@12,n,NA,NA,NA
+C5144390,Buyer is able to login using valid credentials,buyertest@test.com,Password@12,n,NA,NA,NA
+C5144391,Finance user is able to login using valid credentials,financetest@test.com,Password@12,n,NA,NA,NA

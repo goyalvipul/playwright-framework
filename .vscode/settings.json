@@ -1,0 +1,27 @@
+{
+  "editor.quickSuggestions": {
+    "comments": true,
+    "strings": true,
+    "other": true
+  },
+
+  "editor.tabCompletion": "on",
+  "editor.formatOnPaste": true,
+  "javascript.referencesCodeLens.enabled": true,
+  //"eslint.validate": ["javascript"],
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  }
+}
